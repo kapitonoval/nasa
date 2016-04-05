@@ -38,7 +38,7 @@ class User extends \yii\db\ActiveRecord
     {
         return [
             'id' => 'ID',
-            'Столбец 2' => 'Столбец 2',
+            'username' => 'username',
             'password' => 'Password',
         ];
     }

@@ -13,7 +13,7 @@ return [
     'bootstrap' => ['log'],
     'modules' => [],
     'components' => [
-
+        
         'db'=>[
             'class'=>'yii\db\Connection',
             'dsn' => 'mysql:host=localhost;dbname=yiinasa',
@@ -22,7 +22,7 @@ return [
             'charset' => 'utf8'            
         ],
         'user' => [
-            'identityClass' => 'app\models\User',
+            'identityClass' => 'common\models\User',
             'enableAutoLogin' => false,
         ],
         'log' => [
@@ -37,14 +37,9 @@ return [
         'errorHandler' => [
             'errorAction' => 'site/error',
         ],
-        /*
-        'urlManager' => [
-            'enablePrettyUrl' => true,
-            'showScriptName' => false,
-            'rules' => [
-            ],
-        ],
-        */
+        
+        
+        
     ],
     'params' => $params,
 ];
