@@ -100,13 +100,14 @@
 
 3. Настроить доступ к базе для yii и парсера
     yii:
-     ./common/config/main.php
-     ./common/config/main-local.php
+     `./common/config/main.php`
+     `./common/config/main-local.php`
     парсер:
-     ./upload-content/mysqli.php
+     `./upload-content/mysqli.php`
 
-4. скрипт парсер находится ./upload-content/upload.php
+4. скрипт парсер находится `./upload-content/upload.php`
 
 5. необходимо воспользоваться composer и скачать все недостающие зависимости
-   для этого в консоли выполнить:   php composer.phar update
-```
+   для этого в консоли выполнить:   `php composer.phar update`
+
+
