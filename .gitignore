@@ -28,3 +28,9 @@ composer.phar
 phpunit.phar
 # local phpunit config
 /phpunit.xml
+/.idea
+/vendor
+/upload-content/img/*.gitignore
+/upload-content/img/*.jpg
+/upload-content/img/*.jpeg
+/upload-content/img/*.png

@@ -19,7 +19,7 @@ class TblPostSearch extends TblPost
     {
         return [
             [['id'], 'integer'],
-            [['title', 'anons', 'description'], 'safe'],
+            [['title', 'description', 'pub_date', 'up_date', 'img', 'link_to_nasa'], 'safe'],
         ];
     }
 
@@ -60,11 +60,14 @@ class TblPostSearch extends TblPost
         // grid filtering conditions
         $query->andFilterWhere([
             'id' => $this->id,
+            'pub_date' => $this->pub_date,
+            'up_date' => $this->up_date,
         ]);
 
         $query->andFilterWhere(['like', 'title', $this->title])
-            ->andFilterWhere(['like', 'anons', $this->anons])
-            ->andFilterWhere(['like', 'description', $this->description]);
+            ->andFilterWhere(['like', 'description', $this->description])
+            ->andFilterWhere(['like', 'img', $this->img])
+            ->andFilterWhere(['like', 'link_to_nasa', $this->link_to_nasa]);
 
         return $dataProvider;
     }

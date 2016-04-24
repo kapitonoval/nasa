@@ -9,8 +9,11 @@ use Yii;
  *
  * @property integer $id
  * @property string $title
- * @property string $anons
  * @property string $description
+ * @property string $pub_date
+ * @property string $up_date
+ * @property string $img
+ * @property string $link_to_nasa
  */
 class TblPost extends \yii\db\ActiveRecord
 {
@@ -23,23 +26,24 @@ class TblPost extends \yii\db\ActiveRecord
     }
 
     /**
-     * @return array primary key of the table
-     */     
-    public static function primaryKey()
-    {
-        return array('id');
-    }
-
-    /**
      * @inheritdoc
      */
     public function rules()
     {
         return [
-            [['title', 'anons', 'description'], 'required'],
-            [['anons'], 'string'],
-            [['title', 'description'], 'string', 'max' => 255],
+            [['title', 'description', 'pub_date', 'img', 'link_to_nasa'], 'required'],
+            [['pub_date', 'up_date'], 'safe'],
+            [['title', 'description', 'img', 'link_to_nasa'], 'string', 'max' => 255],
         ];
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getImageurl()
+    {
+//        return 'img';
+        return '../../upload-content/img/'.$this->img;
     }
 
     /**
@@ -50,8 +54,11 @@ class TblPost extends \yii\db\ActiveRecord
         return [
             'id' => 'ID',
             'title' => 'Title',
-            'anons' => 'Anons',
             'description' => 'Description',
+            'pub_date' => 'Pub Date',
+            'up_date' => 'Up Date',
+            'img' => 'Img',
+            'link_to_nasa' => 'Link To Nasa',
         ];
     }
 }

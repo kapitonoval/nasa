@@ -28,11 +28,32 @@ $this->params['breadcrumbs'][] = $this->title;
     <?= DetailView::widget([
         'model' => $model,
         'attributes' => [
-            'id',
             'title',
-            'anons:ntext',
+//            'id',
+            [
+                'attribute'=>'photo',
+                'value'=>'../../upload-content/img/'.$model->img,
+                'format' => ['image',['width'=>'350','height'=>'350']],
+            ],
+            [
+                'attribute'=>'Public date',
+                'format'=>'raw',
+                'value'=>Html::a(date('d.m.Y H:i:s',strtotime($model->pub_date)), $model->link_to_nasa,['target' => '_blank']),
+            ],
+//            [Html::a('$model',$model->link_to_nasa)],
+//            'pub_date:datetime',
+            [
+                'attribute'=>'Upload date',
+                'format'=>'raw',
+                'value'=>date('d.m.Y H:i:s',strtotime($model->pub_date)),
+            ],
+//            'up_date:datetime',
             'description',
+
+//            'img',
+//            'link_to_nasa',
         ],
-    ]) ?>
+    ]);
+    ?>
 
 </div>

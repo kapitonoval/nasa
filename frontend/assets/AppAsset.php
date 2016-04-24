@@ -13,8 +13,10 @@ class AppAsset extends AssetBundle
     public $baseUrl = '@web';
     public $css = [
         'css/site.css',
+        'css/main-nasa.css'
     ];
     public $js = [
+        'js/Notify.js',
     ];
     public $depends = [
         'yii\web\YiiAsset',

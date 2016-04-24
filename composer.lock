@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "1c75e5bcf55f7ab4bca526914b8e1a0b",
-    "content-hash": "f1e029ff12c3765aee385d2fc917418f",
+    "hash": "31a5f01a3a872df659dd5ce22e0a24a7",
+    "content-hash": "8f4d0ea6ff3a39d3079646a64e492e0d",
     "packages": [
         {
             "name": "bower-asset/bootstrap",
@@ -197,6 +197,34 @@
                     "node_modules",
                     "package.json"
                 ]
+            }
+        },
+        {
+            "name": "bower-asset/toastr",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/johnpapa/toastr-bower.git",
+                "reference": "9ef3c85c385a9b39d6415a9f35f8049e89559b03"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/johnpapa/toastr-bower/zipball/9ef3c85c385a9b39d6415a9f35f8049e89559b03",
+                "reference": "9ef3c85c385a9b39d6415a9f35f8049e89559b03",
+                "shasum": ""
+            },
+            "require": {
+                "bower-asset/jquery": ">=1.6.3,<3"
+            },
+            "type": "bower-asset-library",
+            "extra": {
+                "bower-asset-main": [
+                    "toastr.js",
+                    "toastr.css"
+                ],
+                "branch-alias": {
+                    "dev-master": "2.1.2-dev"
+                }
             }
         },
         {
@@ -401,6 +429,49 @@
             "time": "2015-08-05 01:03:42"
         },
         {
+            "name": "odaialali/yii2-toastr",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/odai-alali/yii2-toastr.git",
+                "reference": "b5c18473b2ae46d417b9993fa37a12d341dbd1d1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/odai-alali/yii2-toastr/zipball/b5c18473b2ae46d417b9993fa37a12d341dbd1d1",
+                "reference": "b5c18473b2ae46d417b9993fa37a12d341dbd1d1",
+                "shasum": ""
+            },
+            "require": {
+                "bower-asset/toastr": "*",
+                "yiisoft/yii2": "*"
+            },
+            "type": "yii2-extension",
+            "autoload": {
+                "psr-4": {
+                    "odaialali\\yii2toastr\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Odai Alali",
+                    "email": "odai.alali@gmail.com"
+                }
+            ],
+            "description": "This is the Toastr extension for Yii 2. It encapsulates Toastr plugin in terms of Yii widgets, and makes ajax notification easy to implement.",
+            "keywords": [
+                "extension",
+                "notification",
+                "toastr",
+                "yii2"
+            ],
+            "time": "2016-03-04 14:05:16"
+        },
+        {
             "name": "swiftmailer/swiftmailer",
             "version": "5.x-dev",
             "source": {
@@ -452,6 +523,51 @@
                 "mailer"
             ],
             "time": "2016-01-03 15:42:47"
+        },
+        {
+            "name": "thiagotalma/yii2-notify",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/thiagotalma/yii2-notify-widget.git",
+                "reference": "63cd8aababe2a20e0072aaa256a4d1770586943c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/thiagotalma/yii2-notify-widget/zipball/63cd8aababe2a20e0072aaa256a4d1770586943c",
+                "reference": "63cd8aababe2a20e0072aaa256a4d1770586943c",
+                "shasum": ""
+            },
+            "require": {
+                "yiisoft/yii2": "*"
+            },
+            "type": "yii2-extension",
+            "autoload": {
+                "psr-4": {
+                    "talma\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD 3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Thiago Talma",
+                    "email": "thiago@thiagomt.com",
+                    "homepage": "http://www.thiagomt.com/"
+                }
+            ],
+            "description": "Widget for Yii Framework 2.0 to use Bootstrap Notify",
+            "homepage": "https://github.com/thiagotalma/yii2-notify-widget",
+            "keywords": [
+                "alert",
+                "extension",
+                "notify",
+                "widget",
+                "yii2"
+            ],
+            "time": "2014-11-10 12:47:22"
         },
         {
             "name": "yii2tech/admin",
@@ -670,7 +786,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii2-framework/zipball/b5e33b097759d1d1c79135d7e2165a7ddda8f9ac",
+                "url": "https://api.github.com/repos/yiisoft/yii2-framework/zipball/66c56bca952f7af737348188a5e1162a032d248e",
                 "reference": "b5e33b097759d1d1c79135d7e2165a7ddda8f9ac",
                 "shasum": ""
             },
@@ -764,7 +880,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii2-authclient/zipball/52cf59ef887b3d4b4a0be210e93135b891c21d52",
+                "url": "https://api.github.com/repos/yiisoft/yii2-authclient/zipball/87a0648314efa2cf9be25d4d76f4f889d801d2e0",
                 "reference": "52cf59ef887b3d4b4a0be210e93135b891c21d52",
                 "shasum": ""
             },
@@ -812,7 +928,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii2-bootstrap/zipball/4dd9f52e2a376a875d998de6ab4c381291b0c69e",
+                "url": "https://api.github.com/repos/yiisoft/yii2-bootstrap/zipball/61ff14445779b225baa8e60cf4eddbc46cc14504",
                 "reference": "4dd9f52e2a376a875d998de6ab4c381291b0c69e",
                 "shasum": ""
             },
@@ -862,7 +978,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii2-composer/zipball/348122de0b2c2e343b579f93fcda1da78cab4912",
+                "url": "https://api.github.com/repos/yiisoft/yii2-composer/zipball/f5fe6ba58dbc92b37daed5d9bd94cda777852ee4",
                 "reference": "348122de0b2c2e343b579f93fcda1da78cab4912",
                 "shasum": ""
             },
@@ -909,7 +1025,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii2-jui/zipball/69cd9763b4807dbbce367d599dc615c5b8a8ef4f",
+                "url": "https://api.github.com/repos/yiisoft/yii2-jui/zipball/9ab9a2cb17cd7f13921339e11e5146295cf39083",
                 "reference": "69cd9763b4807dbbce367d599dc615c5b8a8ef4f",
                 "shasum": ""
             },
@@ -959,7 +1075,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii2-swiftmailer/zipball/20775fef1047cd927908270a8d7983580304eb57",
+                "url": "https://api.github.com/repos/yiisoft/yii2-swiftmailer/zipball/163b9c6273e133c43a596aef46a9f5b1537731f9",
                 "reference": "20775fef1047cd927908270a8d7983580304eb57",
                 "shasum": ""
             },
@@ -1038,7 +1154,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fzaninotto/Faker/zipball/8deb6343c80c4edf546a6fff01a2b05c7dc59ac4",
+                "url": "https://api.github.com/repos/fzaninotto/Faker/zipball/2e4b26888b33fc733042b116e63336424daeef20",
                 "reference": "8deb6343c80c4edf546a6fff01a2b05c7dc59ac4",
                 "shasum": ""
             },
@@ -1088,7 +1204,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpspec/php-diff/zipball/30e103d19519fe678ae64a60d77884ef3d71b28a",
+                "url": "https://api.github.com/repos/phpspec/php-diff/zipball/0464787bfa7cd13576c5a1e318709768798bec6a",
                 "reference": "30e103d19519fe678ae64a60d77884ef3d71b28a",
                 "shasum": ""
             },
@@ -1122,7 +1238,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii2-codeception/zipball/e01b3c46917b3f00c42f6a4aabf612cc36d792e6",
+                "url": "https://api.github.com/repos/yiisoft/yii2-codeception/zipball/572a6d46d942cc5733c45931fdbd1d60228f3c89",
                 "reference": "e01b3c46917b3f00c42f6a4aabf612cc36d792e6",
                 "shasum": ""
             },
@@ -1167,7 +1283,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii2-debug/zipball/081795536b31d29106b0d1de0cb3aefa3e05e995",
+                "url": "https://api.github.com/repos/yiisoft/yii2-debug/zipball/e26905af4bc1ca5ecbababac112c7f7f722cabd2",
                 "reference": "081795536b31d29106b0d1de0cb3aefa3e05e995",
                 "shasum": ""
             },
@@ -1214,7 +1330,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii2-faker/zipball/a8daa97749e7154d91676405a1c59ed81e1ca999",
+                "url": "https://api.github.com/repos/yiisoft/yii2-faker/zipball/6e6eb430809e3f9c05e367303909a05a4912d4c0",
                 "reference": "a8daa97749e7154d91676405a1c59ed81e1ca999",
                 "shasum": ""
             },
@@ -1261,7 +1377,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii2-gii/zipball/0d93a9dbd55f2d0921b8e153554379bb213a2c7f",
+                "url": "https://api.github.com/repos/yiisoft/yii2-gii/zipball/62eddfcbf377353777742b3ceaf2b75dc81178e3",
                 "reference": "0d93a9dbd55f2d0921b8e153554379bb213a2c7f",
                 "shasum": ""
             },

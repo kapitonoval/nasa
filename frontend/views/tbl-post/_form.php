@@ -14,9 +14,17 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'title')->textInput(['maxlength' => true]) ?>
 
-    <?= $form->field($model, 'anons')->textarea(['rows' => 6]) ?>
+    <?= $form->field($model, 'description')->textInput(['maxlength' => true]) ?>
 
-   <div class="form-group">
+    <?= $form->field($model, 'pub_date')->textInput() ?>
+
+    <?= $form->field($model, 'up_date')->textInput() ?>
+
+    <?= $form->field($model, 'img')->textInput(['maxlength' => true]) ?>
+
+    <?= $form->field($model, 'link_to_nasa')->textInput(['maxlength' => true]) ?>
+
+    <div class="form-group">
         <?= Html::submitButton($model->isNewRecord ? 'Create' : 'Update', ['class' => $model->isNewRecord ? 'btn btn-success' : 'btn btn-primary']) ?>
     </div>
 
